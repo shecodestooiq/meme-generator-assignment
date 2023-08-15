@@ -1,0 +1,19 @@
+/* .width{
+    width: 40VW;
+} */
+
+.Gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid black;
+}
