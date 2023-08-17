@@ -1,8 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home';
+import { DataProvider } from './Stor';
 
 function App() {
-  return <div>Meme Generator App</div>;
+  return (
+    <div className="App">
+      <DataProvider>
+        <Home/>
+      </DataProvider>
+    </div>
+  );
 }
 
 export default App;
