@@ -32,3 +32,32 @@
   width: 350px;
   height: 350px;
 }
+
+.color-picker{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputs,h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.inputs{
+  column-gap: 20px;
+}
+.inputs input{
+  padding: 10px 15px;
+  border: 1px solid purple;
+  border-radius: 10px;
+}
+.inputs button{
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
