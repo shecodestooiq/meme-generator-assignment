@@ -8,13 +8,15 @@ import leftExit from '../images/leftexit.jpg';
 import pushUp from '../images/pushup.jpg';
 import twoButtons from '../images/Two-Buttons.jpg';
 
-
 function MemeProvider({children}){
     const[styling, setStyling] = useState({
         font: '',
-        color: '',
-        size: ''});
-
+        color: 'green',
+        size: '20px',
+        imgUrl: '',
+        topText: '',
+        bottomText: '',
+    });
     const[memeImage, setMemeImage] = useState([
         { 
             id: 1,
@@ -46,9 +48,7 @@ function MemeProvider({children}){
             src: twoButtons,
             alt: "Two Buttons Meme",
         }
-
     ]);
-
     return (
         <MemeContext.Provider value={{styling, setStyling, memeImage, setMemeImage}}>
             {children}

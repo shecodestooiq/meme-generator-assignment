@@ -3,17 +3,13 @@ import { useContext } from "react";
 import { MemeContext } from "../store/store";
 
 function Preview(){
-const {memeImage, setMemeImage} = useContext(MemeContext);
-
-    return (<div>
-         {memeImage.map((image) => (
-        <img 
-        key={image.id} 
-        src={image.src} 
-        alt={image.alt}
-        style={{ height: '25rem' }} />
-      ))}
-    </div>);
+const {styling, setStyling} = useContext(MemeContext);
+ return (<div className="preview">
+  <img src={styling.imgUrl}/>
+  <h1
+  style={{color: styling.color, fontSize: styling.size}}>
+    {styling.topText}</h1>
+ </div>)
 }
 
 export default Preview;

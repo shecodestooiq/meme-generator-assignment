@@ -1,11 +1,12 @@
-import TextInput from "../components/Text";
+
+import Selectors from "../components/Selectors";
 import Preview from "../components/preview";
 
 function Home(){
     return(
     <div className="container">
         <Preview />
-        <TextInput />
+        <Selectors />
     </div>);
 }
 export default Home;
