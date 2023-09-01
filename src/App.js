@@ -1,8 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import MemeProvider from './components/MemeInfo';
+import Home from './pages/home';
+
 
 function App() {
-  return <div>Meme Generator App</div>;
+  return (
+  <MemeProvider>
+    <Home /> 
+  </MemeProvider>);
 }
 
 export default App;
