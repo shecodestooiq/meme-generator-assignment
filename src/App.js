@@ -1,8 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import ImageZoom from "./ImageZoom";
 
 function App() {
-  return <div>Meme Generator App</div>;
+  return (
+    <>
+    <ImageZoom />
+     
+
+
+    </>
+  );
 }
 
 export default App;
